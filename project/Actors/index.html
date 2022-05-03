@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magic Show</title>
+  
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    
+    }
+    body{
+
+justify-content: center;
+align-items: center ;
+background: #000000;
+
+      
+    }
+  
+  .logo{
+  color:gold;
+  text-transform:uppercase ;
+  font-size:4rem;
+  font-weight:400;
+  margin: 0px auto 0px 40px;
+  display:flex ;
+  align-items:center ;
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 1px;
+}
+.fa-hat-wizard {
+  color:white ;
+  font-size:990;}
+  #main-slider{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;#01EDDA
+    max-width:1170px;
+    width:100%;
+    
+  }
+
+.info{
+  font-size: 50px;
+  color:  #F3F3F3;
+  font-weight:bold ;
+  align-items: center;
+  justify-content: center;
+  padding: 30px ;
+  margin: 30px;
+  display:flex ;
+font-family: 'Berkshire Swash', cursive;
+}
+
+  
+    .container .card{
+  position: relative;
+      height: 400px ;
+      width: 300px;
+      background-color:#FFFDFD;
+      margin:30px;
+      padding:30px ;
+      display:flex ;
+  flex-direction:column;
+ 
+  
+    }
+   
+   .container .card .imgBox{
+     position: relative;
+     width:260px;
+     height: 260px;
+     left:30px;
+     top:-50px;
+   }
+    .container .card .imgBox img{
+      position: relative;
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+.name {
+  color:gold ;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  left: 500px;
+  top: 215px;
+  position: absolute; 
+
+  
+}
+.smith {
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 290px;
+  position: absolute;
+  font-size: 19px;
+}
+.mini1{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 260px;
+  position: absolute;
+  font-size: 19px;
+}
+.name2{
+  color:gold ;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  left: 500px;
+  top: 710px;
+  position: absolute; 
+
+  
+}
+.mini2{
+  
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 750px;
+  position: absolute;
+  font-size: 19px;
+}
+.text2{
+    color: #F8FFFE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left: 450px;
+    top: 780px;
+    position: absolute;
+    font-size: 19px;
+}
+.name3{
+    color:gold ;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  left: 500px;
+  top: 1180px;
+  position: absolute; 
+}
+
+.mini3{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 1220px;
+  position: absolute;
+  font-size: 19px;
+  
+}
+
+.text3{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 1250px;
+  position: absolute;
+  font-size: 19px;
+}
+.name4{
+  color:gold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 500px;
+  top: 1630px;
+  position: absolute;
+  
+}
+
+.mini4{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 1670px;
+  position: absolute;
+  font-size: 19px;
+  
+}
+
+.text4{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 1699px;
+  position: absolute;
+  font-size: 19px;
+  
+}
+
+.fff
+  {
+    font-size: 50px;
+    color: #F3F3F3;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin: 100px;
+    display: flex;
+    font-family: 'Berkshire Swash', cursive;
+  }
+
+.name5{
+  color:gold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  right: 500px;
+  top: 2530px;
+  position: absolute;
+  font-size: 30px;
+  
+}
+.mini5{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 2590px;
+  position: absolute;
+  font-size: 19px;
+}
+
+.text5{
+  color: #F8FFFE;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 2640px;
+  position: absolute;
+  font-size: 19px;
+  
+  
+}
+.name6{
+color:gold;
+display:flex;
+justify-content: center;
+align-items: center;
+right: 500px;
+top: 3050px;
+position: absolute;
+font-size: 30px;
+}
+
+.mini6 {
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 3090px;
+  position: absolute;
+  font-size: 19px;
+}
+
+.text6 {
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 3120px;
+  position: absolute;
+  font-size: 19px;
+
+
+}
+
+.name7 {
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 500px;
+  top: 3500px;
+  position: absolute;
+  font-size: 30px;
+}
+
+.mini7 {
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 3550px;
+  position: absolute;
+  font-size: 19px;
+}
+
+.text7 {
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 3600px;
+  position: absolute;
+  font-size: 19px;
+
+
+}
+
+
+.name8{
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 500px;
+  top: 3990px;
+  position: absolute;
+  font-size: 30px;
+}
+
+.mini8{
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 4030px;
+  position: absolute;
+  font-size: 19px;
+}
+
+.text8 {
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 4070px;
+  position: absolute;
+  font-size: 19px;
+
+
+}
+
+.name9{
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 500px;
+  top: 4490px;
+  position: absolute;
+  font-size: 30px;
+}
+
+.mini9{
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 4540px;
+  position: absolute;
+  font-size: 19px;
+}
+
+.text9{
+  color: #F8FFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 4570px;
+  position: absolute;
+  font-size: 19px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    a{
+  text-decoration: none;
+}
+::selection{
+  background-color:red;
+  color: black;
+  
+}
+
+
+    
+  </style>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Tapestry&display=swap" rel="stylesheet">
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  
+    <a href="../main/index.html" class="logo"><b>Magic Show </b>
+      <i class="fas fa-hat-wizard"></i></a>
+  
+    <p class="info">Hollywood Stars & Famous Actors</p>
+  
+  
+  
+  
+
+<div class="container">
+  <div class="card">
+    <div class="imgBox">
+      <img src="will-smith.jpg" alt="">
+    </div>
+  </div>
+    <h2 class="name" >Will Smith</h2>
+    <h3 class="mini1">Mini Bio </h3>
+  <p class="smith">
+    Will Smith
+    Will Smith (né Willard Carroll Smith, Jr.) is an American actor, rapper and producer. Smith launched his career as a rapper as the Fresh Prince. In 1988 — alongside DJ Jazzy Jeff — Smith won the first Grammy ever presented in the rap performance category for "Parents Just Don't Understand." Smith's got his break as an actor on the television sitcom, The Fresh Prince of Bel-Air (1990-1996).
+   
+    
+    In 2002, Smith received his first Oscar nomination for his portrayal of Muhammad Ali in the biopic Ali. His second Oscar nod came in 2007's The Pursuit of Happyness. Smith's other notable films of the 2000s include Hitch (2005), I Am Legend (2007), Seven Pounds (2008) and Hancock (2008).
+    
+    Smith appeared in Focus (2015), Suicide Squad (2016) and Aladdin (2019) before starring in the critically-acclaimed King Richard in 2021. In 2022, Smith won his first Oscar for his portrayal of Richard Williams. His win was overshadowed by a 10-year ban from the Academy Awards — which resulted after he slapped Chris Rock on stage.
+  </p>
+    
+    
+  
+    
+  </div>
+  <hr>
+  <div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="Tom.jpg" alt="">
+      </div>
+      </div>
+        <h2 class="name2">Tom Cruise</h2>
+          <h3 class="mini2">Mini Bio </h3>
+        <p class="text2">
+          
+          Tom Cruise is an American actor and producer. He rose to fame in the 1980s with roles in popular films like Risky Business and Top Gun. He went on to star in hit films including Jerry Maguire, Vanilla Sky, and Mission Impossible. Cruise has long been a subject of public interest because of his high-profile relationships, including his marriages to Nicole Kidman and Katie Holmes.
+        </p>
+  
+  
+      
+  
+    </div>
+   <hr>
+   <div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="Leonardo .jpg" alt="">
+      </div>
+        </div>
+        <h2 class="name3" >Leonard DiCaprio</h2>
+         <h3 class="mini3">Mini Bio </h3>
+        <p class="text3">
+          Leonardo DiCaprio is an American actor and film producer. He started his career by appearing in television commercials prior to landing recurring roles in TV series before moving into films in 1991. DiCaprio owns the production company Appian Way Productions. He has been nominated and won multiple awards for his bodies of work. He made his film debut in the comedic sci-fi horror film Critters 3 (1991). Notable films to his credit include, What's Eating Gilbert Grape (1993), William Shakespeare's Romeo + Juliet (1996), Marvin's Room (1996), Titanic (1997), Gangs of New York (2002), Catch Me If You Can (2002), The Aviator (2004), The Departed (2006), Blood Diamond (2006), Revolutionary Road (2008), Inception (2010), Django Unchained (2012), The Great Gatsby (2013), and The Wolf of Wall Street (2013).
+        </p>
+  
+  
+    
+  
+    </div>
+   <hr>
+   <div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="the rock.png" alt="">
+      </div>
+        </div>
+        <h2 class="name4">Dwayne Douglas</h2>
+        <h3 class="mini4">Mini Bio </h3>
+        
+        <p class="text4">
+          Dwayne Douglas Johnson, also known as The Rock, was born on May 2, 1972 in Hayward, California. He is the son of Ata Johnson (born Feagaimaleata Fitisemanu Maivia) and professional wrestler Rocky Johnson (born Wayde Douglas Bowles). His father, from Amherst, Nova Scotia, Canada, is black (of Black Nova Scotian descent), and his mother is of Samoan background (her own father was Peter Fanene Maivia, also a professional wrestler). 
+          He made his wrestling debut in the USWA under the name Flex Kavanah where he won the tag team championship with Brett Sawyer. In 1996, Dwayne joined the WWE and became Rocky Maivia where he joined a group known as "The Nation of Domination" and turned heel. Rocky eventually took over leadership of the "Nation" and began taking the persona of The Rock. After the "Nation" split, The Rock joined another elite group of wrestlers known as the "Corporation" and began a memorable feud with Steve Austin. Soon the Rock was kicked out of the "Corporation". He turned face and became known as "The Peoples Champion". In 2000, the Rock took time off from WWE to film his appearance in The Mummy Returns (2001). He returned in 2001 during the WCW/ECW invasion where he joined a team of WWE wrestlers at The Scorpion King (2002), a prequel to The Mummy Returns (2001).
+          
+          
+        </p>
+  
+  
+      
+  
+    </div>
+
+</div>
+
+
+
+<h1 class="fff"> ☆نجوم و مشاهير  العرب ☆</h1>
+
+  <div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="يسرا.jpeg" alt="">
+      </div>
+    </div>
+    <h2 class="name5">يسرا</h2>
+    <h3 class="mini5">نبذه </h3>
+    <p class="text5">
+
+      بدأت يسرا حياتها السينمائية في أواخر السبعينيات مع أول ظهور لها عام 1973 علي الشاشة الفضية، تبرر يسرا عملها في بداياتها ببعض الأفلام التي قد لاترقي الي مستوي فني جيد بقولها: "عندما بدأت كانت بداخلي شحنة كبيرة للتمثيل، وكان مجرد تفريغها يرضيني ، وشيئا فشيئا أدركت الفرق بين الانتشار والاختيار"، قبل الاشتغال في مجال الفن والسينما كانت يسرا تطمح في أن تصبح طبيبة أو في السلك الديبلوماسي أو مضيفة طيران.. استمر مشوارها مع السينما المصرية من فيلم لآخر حتى استطاعت أن تكتسب شعبية كبيرة في أواخر الثمانينيات ومطلع التسعينيات ومنها مجموعة من الأفلام التي وقفت فيها أمام النجم الكبير عادل إمام، وتتحدث يسرا دوما عن تأثير المخرج يوسف شاهين والممثل عادل إمام علي مشوارها الفني حيث تعاملت مع المخرج يوسف شاهين للأول مرة من خلال فيلم حدوتة مصرية، أما عادل إمام فقد مثلا معا لأول مرة من خلال فيلم "شباب يرقص فوق النار" العام 1978 قدمت بعدها معه نحو 15 فيلما .
+    </p>
+
+
+
+
+  </div>
+  <br><br><br><br>
+  <hr>
+  <div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="مكي.jpg" alt="">
+      </div>
+    </div>
+    <h2 class="name6">أحمد مكي </h2>
+    <h3 class="mini6">نبذه </h3>
+    <p class="text6">
+
+      أحمد مكي هو ممثل، ومخرج، ومؤلف ومغني راب مصري. بدأ مسيرته الفنية عام 2001 بعد تخرجه من معهد السينما وشارك في العديد من الأفلام والمسلسلات، ونال أول بطولة مفردة له عام 2008 في فيلم إتش دبور ثم شارك مع دنيا سمير غانم، وأحمد الجندي في تقديم سلسلة من الأعمال الناجحة مثل: طير إنت، لا تراجع ولا استسلام وكذلك حلقات مسلسل الكبير أوي بأجزائه الستة
+      قدم أيضًا أحمد مكي العديد من الأغاني خاصة الراب، وقدم ألبوم أصله عربي عام 2011 بالإضافة إلى العديد من الأغاني المفردة
+      الأدوار المهمة
+      الكبير - جوني - حزلقوم - هيثم دبور.
+    </p>
+
+
+
+
+  </div>
+  <hr>
+    <div class="container">
+      <div class="card">
+        <div class="imgBox">
+          <img src="ياسر.jpg" alt="">
+        </div>
+      </div>
+      <h2 class="name7">ياسر جلال </h2>
+      <h3 class="mini7">نبذه </h3>
+      <p class="text7">
+  
+      ياسر جلال ممثلٌ مصريٌ شهير، من عائلة فنية بامتياز. بدأت نجوميته مع نهاية التسعينات من القرن الماضي من خلال مشاركاته في عددٍ من الأعمال التلفزيونية والمسرحية، بعد أن أنهى دراسته في المعهد العالي للفنون المسرحية.
+      
+      أُطلق عليه لقب “رشدي أباظة الجديد” نتيجة للشبه الكبير بينه وبين الفنان الراحل رشدي أباظة، حيث أنه اشتهر بوسامته ورجوليته. وحصل على الكثير من الجوائز المقدمة في عددٍ من المهرجانات.
+      
+      حاز ياسر جلال على العديد من الجوائز من أهمها جائزة أفضل ممثل عام 2017 عن دوره في مسلسل “ظل الرئيس”، وجائزة أفضل ممثل في مهرجان دير جست عن دوره في مسلسل “رحيم” عام 2018
+      </p>
+  
+  
+  
+  
+    </div>
+    <hr>
+     <div class="container">
+        <div class="card">
+          <div class="imgBox">
+            <img src="اكرم حسني.jpg" alt="">
+          </div>
+        </div>
+        <h2 class="name8">أكرم حسني</h2>
+        <h3 class="mini8">نبذه </h3>
+        <p class="text8">
+    
+       شارك أكرم حسني في عام 2015 في مسلسل “لهفة” وكذلك في فيلم “كابتن مصر” بشخصية أبو حفيظة. ثم ابتعد عن شخصية أبو حفيظة حيث قد قدم دور البطولة بجانب أحمد فهمي في فيلم كلب بلدي في عام 2016، وشارك معه في مسلسل ريح المدام في عام 2017، وشارك في بطولة بنك الحظ في العام ذاته، وقدم مسلسل الوصية في عام 2018، ، كما شارك أيضًا في فيلم البدلة، ومسلسل الواد سيد الشحات 
+       مذيع في محطة نجوم اف ام – برنامج ستة فاصلة مية – برنامج ما وراء التردد – برنامج نشرة أخبار الخامسة والعشرون – برنامج أسعد الله مساءكم – برنامج وسيم هدهد – برنامج الكابوس – برنامج حدوته بعد النوم .
+       
+       المسلسلات :- نونة المأذونة – لهفة – ريح المدام – واكلينها والعة ، سبع صنايع – الوصية – كابتن مصر- كلب بلدي – بنك الحظ – البدلة – نشرة أخبار الخامسة والعشرون – سيد أبو حفيظة – وسيم هدهد – زهرة رامي –أسعد الله مساءك .
+        </p>
+    
+    
+    
+    
+      </div>
+      <br><br>
+      <hr>
+        <div class="container">
+          <div class="card">
+            <div class="imgBox">
+              <img src="حماده هلال.jpg" alt="">
+            </div>
+          </div>
+          <h2 class="name9">حماده هلال </h2>
+          <h3 class="mini9">نبذه </h3>
+          <p class="text9">
+      
+            قدم الفنان حمادة هلال مجموعة متنوعة من الأفلام، وهي:
+            
+            عام 2005 شارك الفنان حمادة هلال في أول عمل سينمائي له، وهو فيلم عيال حبيبة مع الفنانة غادة عادل والفنان القدير حسن حسني، إخراج مجدي الهواري.
+            عام 2006 أعاد الفنان حمادة هلال التجربة السينمائية مرة أخرى، وقدم فيلم العيال هربت مع الفنان ماجد الكدوانى وخالد الصاوي، وكان إخراج مجدي الهواري.
+            عام 2007 قدم فيلم “الحب كده” مع الفنانة الشهيرة درة، وإخراج أكرم فريد.
+            عام 2008 شارك الفنان حمادة هلال في فيلم حلم العمر، وقدمه مع الفنانة هالة فاخر، ودينا فؤاد، وكان إخراج وائل إحسان.
+            في عام 2011 شارك الفنان حمادة هلال في فيلم “أمن دولت” من إخراج أكرم فريد، وهذا نفس العام الذي قدم فيه الأغنية الشهيرة شهداء 25 يناير.
+            في عام 2012 شارك في فيلم “مستر أند مسز عويس” مع الفنانة بشرى والفنان أحمد راتب وإخراج أكرم فريد.
+          </p>
+      
+      
+      
+      
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

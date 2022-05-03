@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>
+      Register
+    </title>
+    <link rel="stylesheet"href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+ </head>
+  <body>
+  <div class="Login-box"><br>
+     <h1 class="logo">Magic Show</h1>
+  <div class="Signup_box"><br>
+
+    <h1>Register</h1>
+      <form method="post" action="project/payment-cash/payment.html">
+       <label class="kk">Frist Name</label>
+        <input type="text" required>
+        <br>
+         <label>Last Name</label>
+        <input type="text" required><br>
+         <label>Email</label>
+        <input type="email" required><br>
+        <div class="pass">
+         <label>Password</label>
+        <br>
+       <input required id="pass" type="password">
+
+       <label>Confirm Password</label>
+        <input required id="confirm_pass" type="password" name="confirm_pass"required
+        onkeyup="validate_password()"><br>
+        </div>
+        <span id="wrong_pass_alert"></span>
+ <p>By creating an account you agree to our <a href="project/Terms-and-condition/index.html" style="text-decoration: none;">Terms & Privacy</a>.</p>
+        <div class="buttons">
+       <a href="home">
+        <label>
+          <input required id="Oo" type="submit" value="Register" onclick="wrong_pass_alert()"> 
+          </label></a>
+          <br>
+          </form>
+      <script>
+        function validate_password() {
+ 
+            var pass = document.getElementById('psw').value;
+            var confirm_pass = document.getElementById('confirm_pass').value;
+            if (pass != confirm_pass) {
+                document.getElementById('wrong_pass_alert').style.color = 'red';
+                document.getElementById('wrong_pass_alert').innerHTML
+                  = '☒ Use same password';
+                document.getElementById('Oo').disabled = true;
+                document.getElementById('Oo').style.opacity = (0.4);
+            } else {
+                document.getElementById('wrong_pass_alert').style.color = 'green';
+                document.getElementById('wrong_pass_alert').innerHTML =
+                    '🗹 Password Matched';
+                document.getElementById('Oo').disabled = false;
+                document.getElementById('Oo').style.opacity = (1);
+            }
+        }
+ 
+        function wrong_pass_alert() {
+            if (document.getElementById('pass').value != "" &&
+                document.getElementById('confirm_pass').value != "") {
+                alert("Your response is submitted");
+            } else {
+                alert("Please fill all the fields");
+            }
+        }
+    </script>
+    
+      <p>You have account?<a href="project/login/log in.html" style="text-decoration: none;">Sign in</a></p>
+      </div>
+    
+    
+  </body>
+</html>

@@ -2,7 +2,6 @@ body{
     margin: 0px;
     padding: 0px;
     font-family:poppins;
-    background-color: black;
     color: white;
     background: black ;
     background-size: contain;
@@ -10,21 +9,18 @@ body{
 .contact{
     font-size: large;
     font-weight: bolder;
-    background-color: #0e0c0e;
+
 }
 .formhead{
     color: #eaebea;
     text-align: center;
-    background-color: #0e0c0e;
 }
 .inform{
     color: #eaebea;
     text-align: center;
-    background-color: #0e0c0e;
 }
 .text{
     color: #eaebea;
-    background-color: #0e0c0e;
 }
 .inner::placeholder{
     color: grey;
@@ -55,20 +51,19 @@ input,textarea{
     border: 15px darkred solid;
     height: 50%;
     width: 40%;
-    background-color: #0e0c0e;
 }
 .forms{
     margin-left: 19%;
     margin-bottom: 15%;
     padding: 5%;
     border: 10px solid darkred;
-    background-color: #0e0c0e;
     text-align: center;
     height: 50%;
     width: 50%;
 }
 a{
     text-decoration: none;
+    font-family: 'Berkshire Swash', cursive;
 }
 header {
     position: fixed;

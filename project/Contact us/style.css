@@ -5,7 +5,7 @@ body{
     background-color: black;
     color: white;
     background: black ;
-    background-size: cover;
+    background-size: contain;
     }
 .contact{
     font-size: large;

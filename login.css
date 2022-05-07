@@ -2,7 +2,7 @@ body{
   background-color: black;
   font-family: 'Robot',sans-serif;
   color:white;
-  background-image: url("/IMG-20220501-WA0005.jpg")
+  background-size: cover;
   background-repeat:no-repeat;
 }
 .Signup_box{

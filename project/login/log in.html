@@ -22,12 +22,16 @@
       <span id="text"></span></div>
       <label>Password</label><br>
       <input id="password" type="password" placeholder="Enter Password" required><br>
+      <label>
+        <input class="Show" type="checkbox" onclick="myFunction()">Show Password
+      </label>
       <a href="">
       <label>
         <input id="Oo" type="submit" value="Login" >
         </label>
         </a>
        <br>
+
     </form>      
    <label>
       <input type="checkbox" checked="checked" name="remember" style="color: white;"> Remember me
@@ -40,5 +44,16 @@
 <a href="" class="fa fa-google" style="text-decoration: none;"></a><br>
     </p>
     </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
    </body>
   </html>

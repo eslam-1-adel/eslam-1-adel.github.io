@@ -33,13 +33,6 @@ let imgfawry = document.querySelector(".imgfawry");
 imgfawry.onclick = function(){
     hidden.classList.toggle("hide");
 }
-
-const btn = document.querySelector(".btn");
-let imgcredit = document.querySelector(".imgcredit");
-imgcredit.onclick = function(){
-    btn.classList.toggle("hide");
-}
-
 const numberfawry = document.querySelector(".numberfawry");
 let required = document.querySelector(".required");
 numberfawry.onkeyup =()=>{

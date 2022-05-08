@@ -116,7 +116,8 @@
                          <h4 class="ch">Buried</h4> 
                         </div>
                       </div>
-                    </div>
+                    </div><span id="Nline"><br></span>
+                    <span id="more">
                     <h1 class="mm">FUN FAMILY MOVIES</h1>
                     <div class="moviecontainer">  
                       <div class="movielist">    
@@ -167,7 +168,8 @@
                                   <h4 class="ch">Host</h4>    
                                 </div>  
                               </div>
-                            </div>
+                            </div></span>
+                            <button class="MoreLess" onclick="myFunction()" id="buttton">Read more</button>
                             <footer>
                               <div class="footer">    
                                 <div class="social-media">      
@@ -225,6 +227,20 @@
                               var icon = document.getElementById("icon");
                               icon.onclick = function(){
                                   document.body.classList.toggle("light-theme");
+                              }
+                              function myFunction() {
+                              var Nline = document.getElementById("Nline");
+                               var moreText = document.getElementById("more");
+                              var btnText = document.getElementById("buttton");
+                              if (Nline.style.display === "none") {
+                              Nline.style.display = "inline";
+                              btnText.innerHTML = "Read more"; 
+                              moreText.style.display = "none";
+                              } else {
+                              Nline.style.display = "none";
+                              btnText.innerHTML = "Read less"; 
+                              moreText.style.display = "inline";
+                              }
                               }
                           </script>
                           </body>   

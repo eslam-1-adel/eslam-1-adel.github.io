@@ -62,15 +62,20 @@
 <div class="hh">
 <video src="ريما.mp4" width="850"height="400"controls>
   <br><br>
-</video>
-<div class="movieInformationCont">
-  <div class="movieposter">    
-<img src="Poster_Rema_EN.webp" alt="">
-</div><div class="movieDicription">   
- <h1 class="informition">REMA</h1>
-A young girl’s unique power to foresee the future takes a toll on those around her, as their lives soon morph into a series of miserable events.<br>
+</video><br><br>
+
+ <button onclick="myFunction()">Details</button>
+
+<div id="myDIV">
+  <div class="movieInformationCont">
+    <div class="movieposter">    
+  <img src="Poster_Rema_EN.webp" alt="">
+  </div><div class="movieDicription">   
+   <h1 class="informition">REMA</h1>
+   A young girl’s unique power to foresee the future takes a toll on those around her, as their lives soon morph into a series of miserable events.<br>
 <h1 class="informition">Stars</h1>Hala Fakher، Maya Nasri، Ihab Fahmi، 
  Reem Abdelkader، Firas Saayed، Mohamed Tharwat
+</div>
 </div></div></div>
 <footer>
   <div class="footer">
@@ -130,6 +135,14 @@ A young girl’s unique power to foresee the future takes a toll on those around
   icon.onclick = function(){
       document.body.classList.toggle("light-theme");
   }
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
     </body>
    </html>

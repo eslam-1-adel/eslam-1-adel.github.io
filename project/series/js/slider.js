@@ -4,7 +4,7 @@ window.setInterval(startSlider,2000);
 
 function startSlider()
 {
-	document.getElementById("topimg").src="css/images1/home/"+imagefiles[i];
+	document.getElementById("topimg").src="css/images1/Home/"+imagefiles[i];
 	i++;
 	if(i>4)
 	{

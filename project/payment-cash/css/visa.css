@@ -63,30 +63,11 @@ body{
     justify-content: center;
 
 }
-.line{
-    height:3px;
-    width:100%;
-    /* margin:50px; */
-    background-color: #7e6f6f59;
-    
-}
-/* .container{
-    margin-top:100px;
-    background-color: #151515;
-    color: white;
-} */
-
 .imgcredit{
     margin:50px;
     width:200px;
     height:100px;
-}
-/* .btn{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center;
-} */ 
+} 
 .card-number,
 .card-holder,
 .cvv{

@@ -150,7 +150,8 @@
                     <h4>02:29:39</h4>
                 </div>
             </div>
-        </div>
+        </div><span id="Nline"><br></span>
+        <span id="more">
         <div class="play">
             <h2> مسرح مصر الموسم الخامس</h2>
             <div class="Plays">
@@ -195,7 +196,8 @@
                     <h4>الحلقة الأولي</h4>
                 </div>
             </div>
-        </div>
+        </div></span><br><br>
+        <button class="MoreLess" onclick="myFunction()" id="buttton">Show more</button>
         <footer>
             <div class="footer">
                 <div class="social-media">
@@ -252,6 +254,21 @@
             var icon = document.getElementById("icon");
             icon.onclick = function(){
                 document.body.classList.toggle("light-theme");
+            }
+            function myFunction() {
+                var Nline = document.getElementById("Nline");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("buttton");
+
+                if (Nline.style.display === "none") {
+                Nline.style.display = "inline";
+                btnText.innerHTML = "Show more"; 
+                moreText.style.display = "none";
+                } else {
+                Nline.style.display = "none";
+                btnText.innerHTML = "Show less"; 
+                moreText.style.display = "inline";
+                }
             }
         </script>
     </body>

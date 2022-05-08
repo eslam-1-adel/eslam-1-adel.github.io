@@ -98,6 +98,12 @@ text-align: center;
   text-align: left;
   padding-top: 0px;
 }
+.Show{
+  width: 20%;
+  height: 25px;
+  border: none;
+  outline: none;
+}
 @media only screen and (max-width: 1200px) and (min-width:601px) {
   
   div#envelope{
@@ -172,4 +178,6 @@ text-decoration: none;
 }
 a{
   text-decoration: none;
+}
+
 }

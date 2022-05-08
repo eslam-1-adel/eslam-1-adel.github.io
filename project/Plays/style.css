@@ -84,8 +84,8 @@ li{
     direction: rtl;
 }
 button{
-    color: white;
-    background-color: red;
+    color: gold;
+    background-color: var(--text-color);
     cursor: pointer;
     font-weight: bold;
 }
@@ -97,13 +97,13 @@ video{
   margin-left: 13%;
 }
 .go{
-    margin-left: 83%;
+    margin-left: 82.4%;
     width: 5cm;
     height: 0.8cm;
 }
 .info{
-    color: white;
-    background-color: red;
+    color: gold;
+    background-color: var(--text-color);
     text-decoration: none;
     width: 50%;
     font-size: large;
@@ -299,4 +299,10 @@ footer{
 }
 a{
     text-decoration: none;
+}
+#more{
+    display: none;
+}
+.MoreLess{
+    margin-left: 47%;
 }

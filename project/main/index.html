@@ -16,9 +16,8 @@
     <div class="navebar">
         <h1 class="logo">MAGIC SHOW</h1>
         <div class="profile">
-            <a href="file:///C:/Users/JC.TECH/Desktop/magic_show2/index2.html" class="icon sun"><i class='bx bx-sun'></i></a>
+            <a class="icon sun" id="icon" ><i class='bx bx-sun'></i></a>
            <scan class="profile-name"><a href="../profile/profile.htm" class="click">Profile</scan></a> <!--ASSER-->
-            <a href="file:///C:/Users/JC.TECH/Desktop/magic_show/index.html" class="icon moon"><i class='bx bx-moon'></i></a>
         </div>
     </div>
 
@@ -438,5 +437,11 @@
     <br>
     <!--end footer-->
     </center>
+    <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("light-theme");
+            }
+        </script>
 </body>
 </html>

@@ -141,21 +141,9 @@ body{
 }
 .container{
     z-index: 4;
-    background-color: #151515;
-    color: white;
-}
-.container .poster img{
-    margin-top: 50px;
-    width:100%;
-    height:70vh;
-    /* border: 5px solid black; */
-    border-radius: 20px;
 }
 .container .poster-two{
     margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    /* border: 5px solid black; */
     border-radius: 2rem;
 }
 .word{
@@ -173,8 +161,6 @@ body{
 }
 .movie-kind{
     display: flex;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
     height: 500px;
 }
 .movie-item{
@@ -205,21 +191,6 @@ body{
 .movie-item:hover .image{
     transition: all 1s ease-in-out;
     transform: rotateY(150deg);
-}
-.movie-arrow{
-    position: relative;
-    overflow: hidden;
-    /* margin-left:150px;
-    margin-right:150px; */
-    margin-bottom: -50px;
-}
-.arrow{
-    cursor: pointer;
-    position: absolute;
-    top:20%;
-    right:0px;
-    font-size: 200px;
-    opacity:0.3;
 }
 .m{
     font-family: 'Berkshire Swash', cursive;
@@ -290,10 +261,9 @@ body{
 .footer .google .pic{
     height:35px;
     width:35px;
-    margin:50px;
     position: absolute;
-    top:-45px;
-    left:-35px;
+    top:8px;
+    left:8px;
 }
 .footer .google .text{
     position: absolute;
@@ -309,8 +279,6 @@ body{
     color: white;
 }
 .info{
-    display: flex;
-     justify-content: center;
      margin-bottom: 50px;
 
 }
@@ -329,36 +297,31 @@ body{
 }
 .content-info a::after{
     content:"";
-    display: flex;
-    justify-content: center;
     position: absolute;
     height:2px;
     width:100%;
     bottom: 0px;
-    margin:-15px;
     background-color: var(--body-color);
 }
  .contact:hover{
     background-color: gray; 
     border-radius: 0.5rem;
 } 
+.footer-icons{
+   height:70px;
+}
 .face,
 .twitter,
 .youtube,
 .insta,
 .tiktok{
-    /* border-radius:50%; */
     font-size: 35px;
     margin:15px;
 }
 .face,
 .twitter,
 .tiktok{
-    display: flex;
-    align-items: center;
     font-size: 40px;
-    /* color: aliceblue; */
-    border-radius: 5rem;
 }
 .youtube{
     color: red;
@@ -400,9 +363,4 @@ body{
     width:100%;
     transition: all 1s ease-in-out;
 }
-.footer-icons{
-    display: flex;
-    justify-content: center;
-    margin-top:10px;
-    margin-bottom: 20px;
-}
+

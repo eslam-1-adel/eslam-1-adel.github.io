@@ -31,13 +31,22 @@
     text-decoration: none;
     list-style: none;
 }
-:root{
-    --main-color:#151515;
-    --text-color:red;
-    --bg-color:white;
-}
+:root {
+        --main-color: darkred;
+        --hover-color: rgb(250, 8, 8);
+        --body-color: #000000;
+        --container-color: #2d2e37;
+        --text-color: #fcfeff
+    }         
+    .light-theme {
+        --main-color: darkred;
+        --hover-color: rgb(250, 8, 8);
+        --body-color: #fcfeff;
+        --container-color: #d0d1d9;
+        --text-color: #000000;
+    }
 body{
-    background-color: var(--main-color);
+    background-color: var(--body-color);
     color:var(--text-color);
     overflow-x: hidden;
 }
@@ -66,12 +75,12 @@ body{
 }
 .side i{
     font-size: 30px;
-    color: white;
+    color: #b7b7b7;
     margin-left:10px;
 } 
 .side p{
     font-size: 18px;
-    color: white;
+    color: #b7b7b7;
     margin-left:5px;
 }
 .side .w{
@@ -327,7 +336,7 @@ body{
     width:100%;
     bottom: 0px;
     margin:-15px;
-    background-color: gray;
+    background-color: var(--body-color);
 }
  .contact:hover{
     background-color: gray; 

@@ -38,3 +38,15 @@ let required = document.querySelector(".required");
 numberfawry.onkeyup =()=>{
     required.classList.add("hide");
 }
+function numberrequired(){
+    var txt;
+    const numberfawry = document.querySelector(".numberfawry").value;
+    const submit = document.querySelector(".submit");
+    const press = document.querySelector(".press");
+    if(document.querySelector(".numberfawry").value ==""){
+        alert("Please Enter Mobile Number");
+    }
+    else if(confirm("The Operation Was Completed Successfully")){
+        press.innerHTML = link.href;
+}
+}

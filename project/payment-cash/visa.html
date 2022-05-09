@@ -21,7 +21,7 @@
                 <input type="number" class="card-number" placeholder="Card Number" required>
                 <input type="text" class="card-holder" placeholder="Card Holder Name" required>
                 <input type="text" class="cvv" placeholder="CVV" required>
-                <input type="submit" class="submit" value="Pay Now">
+                <input type="submit" class="submit" value="Pay Now"  onclick="pay()">
             </form>    
         <div class="bank-pay">
             <img src="image/bank.jpg" alt="" class="bank">
@@ -29,5 +29,21 @@
         </div>
     </center>
     <div class="m">M</div>
+    
+    <script>
+    function pay(){
+    const cardnumber = document.querySelector(".card-number").value;
+    const cardholder = document.querySelector(".card-holder").value;
+    const cvv = document.querySelector(".cvv").value;
+    if(document.querySelector(".card-number").value !="" &&
+       document.querySelector(".card-holder").value !="" &&
+       document.querySelector(".card-holder").value !=""){
+        alert("passed");
+        
+    }else{
+        alert("failed");
+    };
+}
+</script>
 </body>
 </html>

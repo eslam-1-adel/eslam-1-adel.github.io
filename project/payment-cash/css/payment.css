@@ -76,12 +76,8 @@ body{
 .textp{
     color: #dfbfbf;
 }
-/* .payment{
-    margin: 40px;
-} */
 .pay{
     margin: 40px;
-    /* border: 2px solid white; */
     width: 150px;
     border-radius: 5px;
     padding: 5px;
@@ -125,7 +121,6 @@ body{
     cursor: pointer;
     position: relative;
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: column;
     border-radius: 10px;
     margin: 10px;
@@ -137,11 +132,6 @@ body{
     width: 100px;
     margin:15px;
 }
-/* .btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 .fawry{
     position: absolute;
     top: 70px;

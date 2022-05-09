@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Work%20Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Magic Show</title>
 </head>
 <body>
@@ -15,7 +18,8 @@
     </div>
     <!-- <div class="line"></div> -->
 <center>
-    <div class="container">
+<div style="background:url('image/packages.jpg'); padding:80px">
+    <div class="container" >
         <div class="text">
             <h3>Pick Your Favorite Plan</h3>
             <p class="textp">Choose Yhe Package That Suits Your From Yhe Monthly Subscriptions</p>
@@ -45,7 +49,7 @@
             <span class="device">3 Device</span>
             <span class="month"> / month</span>
             </div>
-            <h6><del>150 EGP</del></h6>
+            <h6>150 EGP</h6>
             <h4>120 EGP</h4>
             </div>
         </div>
@@ -55,24 +59,30 @@
             <p class="textp">Choose Your Preferred Secure Payment Methods.</p><br>
             <div class="methods">
                 <div class="credit">
-                <a href="visa.html"> 
+                <a href="file:///C:/Users/JC.TECH/Desktop/magic_show/visa.html"> 
                     <img src="image/Visa.png" alt="" class="imgcredit"> </a>
                 </div>
                 <div class="cash">
                     <img src="image/fawry.jpg" class="imgfawry" alt="">
                     <div class="hidden hide">
                         <p class="fawry"> Mobile Number </p>
-                        <input type="text" class="numberfawry">
-                        <p class="required">the mobile number is required</p>
-                        <a href="cash.html"> <input type="submit" class="submit" value="Continue.."> </a>
+                        
+                        <form class="press">
+                        <input required type="number" class="numberfawry" placeholder="number">
+                        <a href="file:///C:/Users/JC.TECH/Desktop/magic_show/cash.html">
+                        <input type="submit" class="submit" value="Continue.." onclick="numberrequired()">
+                        <a id="link" href=""></a>
+                         </a>
+                        </form>
+                    
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</center>        
+     </div>  
+       
 
-<div class="m">M</div>
+
     <!--start footer-->
 
     <div class="footer">
@@ -118,11 +128,9 @@
                 <div><a href="" class="content-privacy" >Contact Us</a></div>
         </div>
     </div>
-    <br>
-
-
-
-
+</div>
+</center> 
+<div class="m">M</div>
 <script src="payment.js"></script>
 </body>
 </html>

@@ -7,16 +7,12 @@
         <link rel="shortcut icon" href="img/fav.icon.png" type="image/x-icon" />
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <script>
-            var icon = document.getElementById("icon");
-            icon.onclick = function(){
-                document.body.classList.toggle("light-theme");
-            }
-        </script>
+      
 </head>
 <body style="background-image: url(../login/1.jpeg);">
    <header>
       <div class="nav container">
+        <a id="arrow"  class="fa-solid fa-caret-left" href="../login/log in.html"> LOG OUT</a>
           <a href="../main/index.html" class="logo">
                   MagicShow
               </a>
@@ -61,32 +57,47 @@
             <span class="nav-link-title">Cartoon</span>
         </a>
       </div>
-  </header><br><br>
-
-     <i class="fa-solid fa-circle-user" style="margin-left:680px;color:white;font-size:180px;"></i>
-  <h3 class="name-user">Jack1873</h3><br>
+  </header><br><br><br>
+     
+      </span><br><br>
+     
+     <i id="profe" class="fa-solid fa-circle-user" ></i>
+                    <h3 class="name-user">Jack1873</h3><br>
     <h2 class="middle1"><pre>140      |      80       |      24</pre></h2>
     <h2 class="middle2"><pre>Movies    |    Favourites |  Watch Later</pre></h2><br><br>
 
-<form>
+
   <fieldset>
     <legend class="legd">My Account:</legend>
     <br><label class="name2">First name:</label><br><br>
-        <input type="text" class="name1" value="jack" style="color: black;" readonly><br><br>
+        <input type="text" class="name1" value="jack" readonly><br><br>
 
     <label class="name2">Last name:</label><br><br>
-        <input type="text" class="name1" value="carlson" style="color: black;" readonly><br><br>
+        <input type="text" class="name1" value="carlson" readonly><br><br>
 
     <label class="name2">Age:</label><br><br>
-        <input type="text" class="name1" value="23" style="color: black;"  readonly><br><br>
+        <input type="text" class="name1" value="23" readonly><br><br>
 
     <label class="name2">Email:</label><br><br>
-        <input type="email" class="name1" value="jackcarlson1873@gmail.com" style="color: black;" readonly><br><br>
+        <input type="email" class="name1" value="jackcarlson1873@gmail.com" readonly><br><br>
 
     <label class="name2">password:</label><br><br>
-        <input type="password" class="name1" value="jdefbwlef" style="color: black;" readonly><br><br><br>
+        <input type="password" class="name1" value="jdefbwlef"  readonly><br><br>
+
+            <span id="chnge">  <label class="name2">Old Password:</label><br><br>
+                                          <input type="password" class="name1"  required><br><br>
+
+                                    <label class="name2">New Password:</label><br><br>
+                                           <input type="password" class="name1"  required><br><br>
+  
+                                    <label class="name2">Confirm Password:</label><br><br>
+                                           <input type="password" class="name1"  required><br><br>
+                                            <a href="../login/log in.html"><input  type="submit" class="submition" value="submit"></input></a>
+                                        </span>
+                            <button onclick="myFunction()" id="myBtn">Change Password</button>
+
   </fieldset>
-</form><br><br><br>
+   <br><br><br>
 
 <footer>
    <div class="footer">
@@ -141,4 +152,26 @@
    </div>
 </footer>
 </body>
+       <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("light-theme");
+            }
+
+             function myFunction() {
+                  var btnText = document.getElementById("myBtn");
+                  var chngeText = document.getElementById("chnge");
+  
+
+            if (chngeText.style.display == "inline") {   
+              btnText.innerHTML = "change password"; 
+              chngeText.style.display = "none";
+
+           } else {
+              btnText.innerHTML = "Back";              
+              chngeText.style.display = "inline";
+              
+           }
+          }
+          </script>
 </html>

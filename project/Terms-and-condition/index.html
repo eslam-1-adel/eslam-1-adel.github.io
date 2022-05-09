@@ -83,7 +83,24 @@ We present a variety of subscription plans (annually, semi-annually, and monthly
             Survival. If any provision or provisions of these terms and conditions shall be held to be illegal, or unenforceable, the legitimacy, legality, and enforceability of the other provisions shall continue to be in full force and effect.
             . Electronic Communications. We will send you notifications and/or any necessary updates and information such as payment authorizations, changes in password or Payment Method, confirmation messages, etc.; in electronic form only, for example via emails to your email address provided during sign-up and registration.
             Changes to Terms and Conditions. Magic Show terms and conditions are subject to change/updates from time to time. We will notify you of any amendments to these terms at least 30 days prior to such changes coming into effect.</p>
+<li>
+    <input type="checkbox" id="agreeToTerms" name="agreeToTerms" value="agreed">I agree to terms.
+</li>
+<li>
+    <a href="https://eslam-1-adel.github.io/project/main/index.html">
+    <button type="button" id="theButton">SUBMIT</button>
+    </a>
+</li>
+<script>
+    agreeToTerms.addEventListener("click",function(){
+        if (agreeToTerms.checked) {
+            theButton.style.visibility ="visible";
+        }else{
+            theButton.style.visibility ="hidden";
 
+        }
+    },false);
+</script>
 </body>
 
 </html>

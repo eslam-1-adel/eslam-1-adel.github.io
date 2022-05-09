@@ -153,22 +153,6 @@ body{
 .numberfawry:hover{
     background-color: rgba(233, 213, 213, 0.096);
 }
-/* .numberfawry::after{
-    content:"";
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    height:2px;
-    width:100%;
-    right:0px;
-    background-color: red;
-} */
-.required{
-    position: absolute;
-    color: red;
-    top: 140px;
-    left: 15px;
-}
 .submit{
     position: absolute;
     height: 40px;

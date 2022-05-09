@@ -127,35 +127,59 @@ header {
 .nav-link-title {
     font-size: 0.7rem;
 }
+#arrow{
+  color:white;
+  font-size:20px;
+  text-align: left;
+  margin: 0%;
+  padding: 0%;
+}
+#log:hover{
+    color: var(--text-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1); 
+}
 
+#profe{
+  margin-left:656px;
+  color:white;
+  font-size:180px;
+}
 .name-user{
   color:white;
-  margin-left:728px;
+  margin-left:708px;
 }
 .middle1{
    color:white;
-   margin-left:587px;
+   margin-left:541px;
 }
 .middle2{
    color:white;
-   margin-left:576px;
+   margin-left:530px;
 }
-form{
+fieldset{
    width:548px;
-   margin-left:509px;
+   margin-left:463px;
 }
 .legd{
    color:white;
    margin-left:200px;
 }
 .name1{
-   color:white;
+   color:black;
    margin-left:160px;
 }
 .name2{
   color:white;
   margin-left:130px;
 }
+#myBtn{
+  margin-left:420px;
+}
+#chnge{
+    display:none;
+}
+
 footer{
     margin: 20px;
     margin-left: 359px;
@@ -221,4 +245,11 @@ footer{
     text-align: center;
     padding: 0;
     margin: 20px;
+}
+.submition{
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    margin-left: 40%;
+    color: #000000;
 }
